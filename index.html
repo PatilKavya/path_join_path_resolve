@@ -85,51 +85,22 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <!DOCTYPE html>
-<html>
-<body>
-
-<h1> Path.join() and Path.resolve()</h1>
-
-
-
-<p>The path is one of the core modules of the Node.js and we use some of the path methods more 
-
-<p>frequently than other methods. path.join() and path.resolve() are among those methods.</p></p>
-<h2>path.join()</h2>
-
-
- <p>The path.join() method is used to get the concatenated path of one or more file paths. path.join() 
-
+        <h1 id="Path-join-and-Path-resolve"><a href="#Path-join-and-Path-resolve" class="headerlink" title="Path.join() and Path.resolve()"></a>Path.join() and Path.resolve()</h1><p>The path is one of the core modules of the Node.js and we use some of the path methods more </p>
+<p>frequently than other methods. path.join() and path.resolve() are among those methods.</p>
+<h2 id="path-join"><a href="#path-join" class="headerlink" title="path.join()"></a>path.join()</h2><p> The path.join() method is used to get the concatenated path of one or more file paths. path.join() </p>
 <p> takes any number of parameters in stringified form and join them together and we can use the result </p>
-<p> path.</p></p>
-  <p>  In order to use path.join() we need to import the path module first from the Node </p>
+<p> path.</p>
+<p>  In order to use path.join() we need to import the path module first from the Node.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">const path = require(&#x27;path&#x27;);</span><br><span class="line"></span><br><span class="line">const resultPath = path.join(&#x27;mainDir&#x27;,&#x27;subDir&#x27;,&#x27;filename&#x27;) ;</span><br><span class="line"></span><br><span class="line">console.log(resultPath)    //    mainDir/subDir/filename</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
-<code >
-
-<p>const path &#x3D; require(‘path’);</p>
-<p>const resultPath &#x3D; path.join(‘mainDir’,’subDir’,’filename’) ;</p>
-<p>console.log(resultPath)    &#x2F;&#x2F;    mainDir&#x2F;subDir&#x2F;filename</p>
-</code>
-
-
-
-<h2>path.resolve()</h2>
-
- <p>The path.resolve() method is used to get the absolute path of a file. We can give any number of a 
- 
+<h2 id="path-resolve"><a href="#path-resolve" class="headerlink" title="path.resolve()"></a>path.resolve()</h2><p> The path.resolve() method is used to get the absolute path of a file. We can give any number of a </p>
 <p> arguments to the method, we get concatenated path and result will always be in absolute path to the </p>
-<p> current directory we are working on.</p> </p>
-<code>
+<p> current directory we are working on.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">const path = require(&#x27;path&#x27;);</span><br><span class="line"></span><br><span class="line">const resultPath = path.resolve(&#x27;mainDir&#x27;,&#x27;subDir&#x27;,&#x27;filename&#x27;) ;</span><br><span class="line"></span><br><span class="line">console.log(resultPath)      // home/user/mainDir/subDir/filename</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p> const path &#x3D; require(‘path’);</p>
-<p> const resultPath &#x3D; path.resolve(‘mainDir’,’subDir’,’filename’) ;</p>
-<p> console.log(resultPath)      &#x2F;&#x2F; home&#x2F;user&#x2F;mainDir&#x2F;subDir&#x2F;filename</p>
-</code>
-</body>
-</html>
+
       
     </div>
     <footer class="article-footer">
